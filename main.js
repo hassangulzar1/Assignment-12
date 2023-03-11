@@ -160,8 +160,19 @@ for (let i = 0; i < myArray.length; i++) {
 // }
 
 // Write a program that uses a for loop to find the sum of all even numbers from 1 to 100.
-// for (let i = 1; i <= 3; i++) {
-//   if (i % 2 == 0) {
-//     console.log(i + i);
-//   }
-// }
+let evenNumber = 100;
+let sum = 0;
+for (let i = 0; i <= evenNumber; i++) {
+  if (i % 2 == 0) {
+    console.log((sum += i));
+  }
+}
+
+//                        <-------------------------------------------->
+
+//! <------While loop-------->
+// Write a program that asks the user to enter a number and then prints out all the odd numbers up to that number.
+// Write a program that asks the user to enter a number and then prints out the multiplication table for that number, up to 10.
+// Write a program that generates a random number between 1 and 100 and asks the user to guess it. The program should keep asking the user for guesses until they get the number.
+// Write a program that asks the user to enter a word and then prints out the word in reverse order.
+// Write a program that asks the user to enter a series of numbers and then finds the sum and average of those numbers.
