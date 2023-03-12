@@ -172,7 +172,56 @@ for (let i = 0; i <= evenNumber; i++) {
 
 //! <------While loop-------->
 // Write a program that asks the user to enter a number and then prints out all the odd numbers up to that number.
+// let askNumber = Number(prompt("Enter a number..."));
+// let i = 0;
+// while (i <= askNumber) {
+//   if (i % 2 != 0) {
+//     console.log(i);
+//   }
+//   i++;
+// }
+
 // Write a program that asks the user to enter a number and then prints out the multiplication table for that number, up to 10.
+// let askFortable = Number(
+//   prompt("Enter a number to get the multiplication table")
+// );
+// let i = 1;
+// while (i <= 10) {
+//   console.log(askFortable * i);
+//   i++;
+// }
+
 // Write a program that generates a random number between 1 and 100 and asks the user to guess it. The program should keep asking the user for guesses until they get the number.
+let randomNumber = Math.floor(Math.random() * 100);
+let guessNumber;
+while (guessNumber != randomNumber) {
+  guessNumber = Number(prompt("Guess number between 1 to 100"));
+  if (randomNumber == guessNumber) {
+    alert(`congradulation Number is ${randomNumber}`);
+  } else if (randomNumber > guessNumber) {
+    alert(`the number is larger then ${guessNumber}`);
+  } else if (randomNumber < guessNumber) {
+    alert(`The number is Smaller then ${guessNumber}`);
+  } else {
+    alert("invalid number");
+  }
+}
+
 // Write a program that asks the user to enter a word and then prints out the word in reverse order.
+// let word = prompt("Enter a word");
+// let i = 0;
+// while (i < 1) {
+//   alert(word.split("").reverse().join(""));
+//   i++;
+// }
+
 // Write a program that asks the user to enter a series of numbers and then finds the sum and average of those numbers.
+// let number = Number(prompt("Enter how many numbers you want to add"));
+// let sum1 = 0;
+// let n = 1;
+// while (n <= number) {
+//   let num1 = Number(prompt("enter the number"));
+//   sum1 += num1;
+//   n++;
+// }
+// alert(`You add ${number} numbers Your all Numbers average is  ${sum1}`);
