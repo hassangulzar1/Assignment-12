@@ -16,7 +16,7 @@ let myString5 = myString4.split("");
 console.log(myString5.reverse());
 console.log(myString5.join(""));
 
-//                        <-------------------------------------------->
+//   !                     <-------------------------------------------->
 
 //! <------NUMBERS-------->
 
@@ -51,7 +51,7 @@ console.log(Math.sqrt(num1));
 // Write a js program to calculate the absolute value of a number.
 console.log(Math.abs(num2));
 
-//                        <-------------------------------------------->
+// !                       <-------------------------------------------->
 
 // !<------DATE METHODS-------->
 
@@ -97,7 +97,7 @@ if (date1 > date2) {
   console.log("both are equal");
 }
 
-//                        <-------------------------------------------->
+//!                        <-------------------------------------------->
 
 //! <------MATH METHODS-------->
 // Write a js program to find the absolute value of a number.
@@ -130,7 +130,7 @@ console.log(Math.cos(Math.PI / 4));
 // Write a js program to calculate the square root of a number.
 console.log(Math.sqrt(25));
 
-//                        <-------------------------------------------->
+// !                       <-------------------------------------------->
 
 //! <------For loop-------->
 // Write a program that uses a for loop to print the numbers from 1 to 10.
@@ -168,7 +168,7 @@ for (let i = 0; i <= evenNumber; i++) {
   }
 }
 
-//                        <-------------------------------------------->
+//    !                    <-------------------------------------------->
 
 //! <------While loop-------->
 // Write a program that asks the user to enter a number and then prints out all the odd numbers up to that number.
@@ -192,20 +192,21 @@ for (let i = 0; i <= evenNumber; i++) {
 // }
 
 // Write a program that generates a random number between 1 and 100 and asks the user to guess it. The program should keep asking the user for guesses until they get the number.
-let randomNumber = Math.floor(Math.random() * 100);
-let guessNumber;
-while (guessNumber != randomNumber) {
-  guessNumber = Number(prompt("Guess number between 1 to 100"));
-  if (randomNumber == guessNumber) {
-    alert(`congradulation Number is ${randomNumber}`);
-  } else if (randomNumber > guessNumber) {
-    alert(`the number is larger then ${guessNumber}`);
-  } else if (randomNumber < guessNumber) {
-    alert(`The number is Smaller then ${guessNumber}`);
-  } else {
-    alert("invalid number");
-  }
-}
+// let randomNumber = Math.floor(Math.random() * 100);
+// let guessNumber;
+// while (randomNumber != guessNumber) {
+//   guessNumber = Number(prompt("Guess number between 1 to 100"));
+//   if (randomNumber == guessNumber) {
+//     alert(`congradulation Number is ${randomNumber}`);
+//     break;
+//   } else if (randomNumber > guessNumber) {
+//     alert(`the number is larger then ${guessNumber}`);
+//   } else if (randomNumber < guessNumber) {
+//     alert(`The number is Smaller then ${guessNumber}`);
+//   } else {
+//     alert("invalid number");
+//   }
+// }
 
 // Write a program that asks the user to enter a word and then prints out the word in reverse order.
 // let word = prompt("Enter a word");
@@ -225,3 +226,63 @@ while (guessNumber != randomNumber) {
 //   n++;
 // }
 // alert(`You add ${number} numbers Your all Numbers average is  ${sum1}`);
+
+// !                       <-------------------------------------------->
+
+//! <------do While loop-------->
+// Write a program that asks the user to enter a password. Keep asking the user to enter a password until they enter the correct password.
+// let password;
+// let attempt = 3;
+// do {
+//   password = prompt("Enter your password");
+//   if (password == "password") {
+//     alert("congradulation Your entered correct password");
+//   } else {
+//     alert(`Invalid password your attempt left ${attempt}`);
+//   }
+//   if (attempt == 0) break;
+//   attempt--;
+// } while (password != "password");
+
+// Write a program that asks the user to enter a number and then prints out all the numbers from that number down to 1.
+// let askNumber = Number(prompt("Enter a number to print down to 1"));
+// let i = askNumber;
+// do {
+//   console.log(i);
+//   i--;
+// } while (i >= 1);
+
+// Write a program that generates a random number between 1 and 100 and asks the user to guess it. The program should keep asking the user for guesses until they get the number. At the end of the loop, the program should ask the user if they want to play again.
+// let randomNumber = Math.floor(Math.random() * 100);
+// let guessNumber;
+// do {
+//   guessNumber = Number(prompt("Guess number between 1 to 100"));
+//   if (randomNumber == guessNumber) {
+//     alert(`congradulation Number is ${randomNumber}`);
+//     confirm("do you want to play again?");
+//   } else if (randomNumber > guessNumber) {
+//     alert(`the number is larger then ${guessNumber}`);
+//   } else if (randomNumber < guessNumber) {
+//     alert(`The number is Smaller then ${guessNumber}`);
+//   } else {
+//     alert("invalid number");
+//   }
+// } while (randomNumber != guessNumber);
+
+// Write a program that asks the user to enter a series of numbers and then finds the largest number. The program should keep asking the user for numbers until they enter a negative number.
+// let numbersArray = [];
+// let number;
+// let maximumNumber;
+// let i = 1;
+//
+// do {
+//   number = parseInt(prompt("Enter a series of numbers"));
+//   numbersArray.push(number);
+//   if (number < 0) break;
+//   for (let e = 0; e < numbersArray.length; e++) {
+//     maximumNumber = Math.max(...numbersArray);
+//   }
+// } while (i > 0);
+// alert("Higest number is " + maximumNumber);
+
+// Write a program that asks the user to enter a series of words and then prints out the words in reverse order. The program should keep asking the user for words until they enter the word "stop".
