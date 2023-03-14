@@ -286,3 +286,14 @@ for (let i = 0; i <= evenNumber; i++) {
 // alert("Higest number is " + maximumNumber);
 
 // Write a program that asks the user to enter a series of words and then prints out the words in reverse order. The program should keep asking the user for words until they enter the word "stop".
+// let wordSeries;
+// let words = [];
+// let i = 1;
+// let n = 0;
+// do {
+//   wordSeries = prompt("Enter a series of words");
+//   words.push(wordSeries);
+//   if (wordSeries == "stop") break;
+// } while (i > 0);
+// let reverse = words.reverse().join(" ");
+// alert(reverse.slice(5, reverse.length));
