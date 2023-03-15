@@ -297,3 +297,140 @@ for (let i = 0; i <= evenNumber; i++) {
 // } while (i > 0);
 // let reverse = words.reverse().join(" ");
 // alert(reverse.slice(5, reverse.length));
+
+// !                       <-------------------------------------------->
+
+//! <------Switch case-------->
+
+// 1. Write a js program to print day of week name using switch case.
+// let weekdays = Number(prompt("Enter day of week"));
+// switch (weekdays) {
+//   case 0:
+//     console.log("Sunday");
+//     break;
+//   case 1:
+//     console.log("Monday");
+//     break;
+//   case 2:
+//     console.log("Tuesday");
+//     break;
+//   case 3:
+//     console.log("Wednesday");
+//     break;
+//   case 4:
+//     console.log("Thursday");
+//     break;
+//   case 5:
+//     console.log("Friday");
+//     break;
+//   case 6:
+//     console.log("Saturday");
+//     break;
+//
+//   default:
+//     break;
+// }
+
+// 2. Write a js program print total number of days in a month using switch case.
+// let noOfdays = prompt(
+//   "Enter month name do you want to see how many days in it"
+// );
+// switch (noOfdays) {
+//   case "jan":
+//   case "january":
+//   case "mar":
+//   case "march":
+//   case "may":
+//   case "july":
+//   case "oct":
+//   case "october":
+//   case "aug":
+//   case "august":
+//   case "dec":
+//   case "december":
+//     alert("31");
+//     break;
+//
+//   case "april":
+//   case "june":
+//   case "sep":
+//   case "september":
+//   case "nov":
+//   case "november":
+//     alert("30");
+//     break;
+//
+//   case "feb":
+//   case "february":
+//     alert("28");
+//     break;
+//   default:
+//     alert("Invalid Entry");
+//     break;
+// }
+
+// 3. Write a js program to check whether an alphabet is vowel or consonant using switch case.
+// let vowelConsonent = prompt(
+//   "Enter a single alphabet I will tell you this is vowel or consonant"
+// );
+// switch (vowelConsonent) {
+//   case "a":
+//   case "e":
+//   case "i":
+//   case "o":
+//   case "u":
+//   case "A":
+//   case "E":
+//   case "I":
+//   case "O":
+//   case "U":
+//     alert("Alphabet is vowel");
+//     break;
+//
+//   default:
+//     alert("Alphabet Is Consonant");
+//     break;
+// }
+
+// 4. Write a js program to find maximum between two numbers using switch case.
+// let number1 = Number(prompt("Enter a first Number"));
+// let number2 = Number(prompt("Enter a 2nd Number"));
+// switch (number1 > number2) {
+//   case false:
+//     alert(`${number2} is bigger`);
+//     break;
+//   case true:
+//     alert(`${number1} is bigger`);
+//     break;
+// }
+
+// 5. Write a js program to check whether a number is even or odd using switch case.
+// let evenOdd = Number(prompt("Enter to check number is even or odd"));
+// let x = evenOdd % 2;
+// switch (x) {
+//   case 0:
+//     console.log("This number is even");
+//     break;
+//   case 1:
+//     console.log("This number is Odd");
+//     break;
+//
+//   default:
+//     break;
+// }
+
+// 6. Write a js program to check whether a number is positive, negative or zero using switch case.
+// let positiveNegative = Number(
+//   prompt("Enter a number i will tell you number is positive negative or zero")
+// );
+// switch (true) {
+//   case positiveNegative > 0:
+//     console.log("Number is Positive");
+//     break;
+//   case positiveNegative < 0:
+//     console.log("Number is Negative");
+//     break;
+//   case positiveNegative == 0:
+//     console.log("Number is Zero");
+//     break;
+// }
